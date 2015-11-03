@@ -33,7 +33,7 @@ defmodule PingPongServer do
   end
 
   def handle_call(:stop, _from, state) do
-    {:stop, :normal_stop, state}
+    {:stop, :normal, state}
   end
 
   def handle_call(:crash, _from, state) do
