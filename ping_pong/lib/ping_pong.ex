@@ -4,4 +4,8 @@ defmodule PingPong do
   def start(_type, _args) do
     PingPongSupervisor.start_link
   end
+
+  def ping do
+    PingPongServer.ping GlobalPingPong
+  end
 end
