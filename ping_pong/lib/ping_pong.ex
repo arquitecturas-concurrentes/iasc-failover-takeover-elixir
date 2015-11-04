@@ -6,6 +6,6 @@ defmodule PingPong do
   end
 
   def ping do
-    PingPongServer.ping GlobalPingPong
+    PingPongServer.ping {:global, GlobalPingPong}
   end
 end
