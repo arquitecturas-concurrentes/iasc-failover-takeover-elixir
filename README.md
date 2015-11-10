@@ -7,6 +7,7 @@ Prestar atención a los siguientes elementos:
 * Aplicaciones
 * Workers - GenServer en este caso
 * Supervisores
+* Alias locales y globales
 
 ## Levantando una sóla VM
 
