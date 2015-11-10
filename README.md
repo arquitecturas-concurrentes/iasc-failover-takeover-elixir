@@ -2,6 +2,11 @@
 
 La aplicación en un `PingPongServer`: un actor al cual le envía `ping`, y te responde `pong`
 
+Prestar atención a los siguientes elementos: 
+
+* Aplicaciones
+* Workers - GenServer en este caso
+* Supervisores
 
 ## Levantando una sóla VM
 
@@ -13,7 +18,7 @@ iex -S mix
 
 
 ```bash
-iex -sname foo -S mix
+iex --sname foo -S mix
 ```
 
 Luego se pueden utilizar las siguientes herramientas para hacer comunicación entre VMs:
