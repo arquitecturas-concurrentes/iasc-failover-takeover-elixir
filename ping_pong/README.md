@@ -1,19 +1,10 @@
 # PingPong
 
-**TODO: Add description**
+Para correr el código, primero de levantar las [3 VMs necesarias](https://github.com/arquitecturas-concurrentes/iasc-distribution-elixir#levantando-múltiples-vms-1), luego podemos probar que efectivamente funciona corriendo el siguiente código desde cualquiera de las VMs:
 
-## Installation
+```
+iex(me@computer-name)2> PingPong.ping
+:pong
+```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add ping_pong to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:ping_pong, "~> 0.0.1"}]
-        end
-
-  2. Ensure ping_pong is started before your application:
-
-        def application do
-          [applications: [:ping_pong]]
-        end
+para más información visitar [elixir - Distributed tasks and configuration](http://elixir-lang.org/getting-started/mix-otp/distributed-tasks-and-configuration.html).
