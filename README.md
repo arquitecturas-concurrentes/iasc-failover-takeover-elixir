@@ -1,6 +1,6 @@
-> Ejemplo de una aplicación OTP distribuida
+# Ejemplo de una aplicación OTP distribuida
 
-La aplicación en un `PingPongServer`: un actor al cual le envía `ping`, y te responde `pong`
+La aplicación define un [`PingPongServer`](https://github.com/arquitecturas-concurrentes/iasc-distribution-elixir/tree/master/ping_pong): un actor al cual si le envía el mensaje `ping` responde `pong`. 
 
 Prestar atención a los siguientes elementos: 
 
@@ -34,5 +34,7 @@ iex --sname ke -pa _build/dev/lib/ping_pong/ebin/ --app ping_pong --erl "-config
 iex --sname me -pa _build/dev/lib/ping_pong/ebin/ --app ping_pong --erl "-config config/me"
 iex --sname roon -pa _build/dev/lib/ping_pong/ebin/ --app ping_pong --erl "-config config/roon"
 ```
+
+Tener en cuenta que por lo definido en cada uno de los [archivos de configuración](https://github.com/arquitecturas-concurrentes/iasc-distribution-elixir/tree/master/ping_pong/config), la consola se va a quedar esperando hasta que las 3 VMs estén levantadas antes de empezar.
 
 Probar matar una vm y ver que después el proceso renace en la siguiente de menor prioridad
