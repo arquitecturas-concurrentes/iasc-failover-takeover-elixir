@@ -9,7 +9,6 @@ defmodule PingPongServer do
     GenServer.start(__MODULE__, :ok, opts)
   end
 
-
   def ping(server) do
     GenServer.call server, :ping
   end
