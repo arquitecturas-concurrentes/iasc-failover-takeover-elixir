@@ -1,4 +1,4 @@
-# Ejemplo de una aplicación OTP distribuida
+# Ejemplo de una aplicación OTP tolerante a fallos mediante multiples VMs usando Failover/Takeover
 
 La aplicación define un [`PingPongServer`](https://github.com/arquitecturas-concurrentes/iasc-distribution-elixir/tree/master/ping_pong): un actor al cual si le envía el mensaje `ping` responde `pong`. 
 
