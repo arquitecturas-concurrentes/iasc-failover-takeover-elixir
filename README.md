@@ -38,3 +38,19 @@ iex --sname c -pa _build/dev/lib/ping_pong/ebin/ --app ping_pong --erl "-config 
 Tener en cuenta que por lo definido en cada uno de los [archivos de configuración](https://github.com/arquitecturas-concurrentes/iasc-distribution-elixir/tree/master/ping_pong/config) y de la [documentacion de erlang](http://erlang.org/doc/design_principles/distributed_applications.html), la consola se va a quedar esperando hasta que las 3 VMs estén levantadas antes de empezar.
 
 Probar matar una vm y ver que después el proceso renace en la siguiente de menor prioridad
+
+---
+**NOTA**
+
+En los archivos de configuracion se va a describir donde estaran los distintos nodos que se describen de la siguiente manera <nombre de nodo>@<host>, donde el nombre del nodo en este ejemplo es el nodo a, b o c, y el host es nuestra maquina, identificado en linux con el nombre del equipo que tenemos. Podemos ver esto haciendo 
+
+```
+cat /etc/hostname
+```
+
+En windows se puede ver nuestro hostname por medio del comando del ipconfig
+
+```
+ipconfig /all
+```
+---
