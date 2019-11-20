@@ -7,4 +7,4 @@ iex(me@computer-name)2> PingPong.ping
 :pong
 ```
 
-para más información visitar [elixir - Distributed tasks and configuration](http://elixir-lang.org/getting-started/mix-otp/distributed-tasks-and-configuration.html).
+para más información visitar [elixir - Distributed tasks](https://elixir-lang.org/getting-started/mix-otp/distributed-tasks.html) [and configuration](https://hexdocs.pm/elixir/Application.html#module-the-application-environment).
