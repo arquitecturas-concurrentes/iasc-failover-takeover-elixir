@@ -27,6 +27,12 @@ Luego se pueden utilizar las siguientes herramientas para hacer comunicación en
 * `Node.spawn`
 * `:rpc.call`
 
+## Levantando solo un nodo
+
+```bash
+iex --sname pingpong -pa _build/dev/lib/ping_pong/ebin --app
+```
+
 ## Levantando múltiples VMs
 
 ```bash
@@ -54,3 +60,11 @@ En windows se puede ver nuestro hostname por medio del comando del ipconfig
 ipconfig /all
 ```
 ---
+
+## Para levantar un nodo que solo observe a los otros que estan en esquema failover/takeover
+
+```bash
+iex --name observer@127.0.0.1 --cookie cookie
+```
+
+luego solo basta levantar el observer con :observer.start y vamos a poder ver todos los nodos
