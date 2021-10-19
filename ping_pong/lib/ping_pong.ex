@@ -8,4 +8,8 @@ defmodule PingPong do
   def ping do
     PingPongServer.ping {:global, GlobalPingPong}
   end
+
+  def kaboom do
+    PingPongServer.crash {:global, GlobalPingPong}
+  end
 end
