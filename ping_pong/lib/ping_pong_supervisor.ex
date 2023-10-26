@@ -9,6 +9,7 @@ defmodule PingPongSupervisor do
     children = [
       worker(PingPongServer, [[name: {:global, GlobalPingPong}]], restart: :transient)
     ]
+
     supervise(children, strategy: :one_for_one, max_restarts: 10, max_seconds: 2)
   end
 end
